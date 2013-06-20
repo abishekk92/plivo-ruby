@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "plivo"
   gem.homepage = "http://github.com/abishekk92/plivo"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "API Wrapper to interact with Plivo Cloud, exposes the endpoints as ruby methods"
+  gem.description = "API Wrapper to interact with Plivo Cloud"
   gem.email = "bhat.abishek@gmail.com"
   gem.authors = ["Abishek Bhat"]
   # dependencies defined in Gemfile
