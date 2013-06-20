@@ -11,6 +11,10 @@
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
+== TO DO
+* Write extensive rspec tests and Mock the API calls
+* The current design is meh. There is a lot of re-factoring that needs to be done to reduce, code repition and also make the code look more Ruby like.
+* Provide functionality to automatically create wrapper methods driven by an YAML config file. This is longshot, however should revisit this and can be the way forward
 == Copyright
 
 Copyright (c) 2013 Abishek Bhat. See LICENSE.txt for
