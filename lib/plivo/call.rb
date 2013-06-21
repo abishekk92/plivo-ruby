@@ -12,7 +12,7 @@ module Plivo
 	    Plivo.get self.create_subextension(record_id),params
 	end
 
-	def self.live(call_uuid=:all,params)
+	def self.live(call_uuid=:all,params={})
 	    params[:status]="live"
 	    call_uuid == :all ? Plivo.get(@api_extension,params): Plivo.get(self.create_subextension(call_uuid),params)
 	end

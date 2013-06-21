@@ -6,7 +6,7 @@ module Plivo
 	    subs.unshift(@api_extension).join("/")
 	end
 	def self.list(params={})
-	    Plivo.get @api_etension,params
+	    Plivo.get @api_extension,params
 	end
 
 	def self.get_conference_by_conference_name(conference_name,params={})
@@ -32,7 +32,7 @@ module Plivo
 	    Plivo.post self.create_subextension(conference_name,"Member",member_id,"Speak"),params
 	end
 
-	def self.member(action,conference_name,member_id,params)
+	def self.member(action,conference_name,member_id,params={})
 
 	    deaf_extension,mute_extension,kick_extension=*%w[Deaf Mute Kick].map { |endpoint| self.create_subextension conference_name,member_id,endpoint }
 	    case action
