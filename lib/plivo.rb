@@ -22,7 +22,6 @@ require_relative 'plivo/conference'
 module Plivo
 	include HTTParty
 	attr_accessor :auth_id,:auth_token
-	
 	headers 'User-Agent' => 'RubyPlivo'
 	format :json
 	
