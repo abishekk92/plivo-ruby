@@ -1,7 +1,7 @@
 module Plivo
     class IncomingCarrier
 
-	@api_extension="/Conference"
+	@api_extension="/IncomingCarrier"
 	def self.create_subextension(*subs)
 	    subs.unshift(@api_extension).join("/")
 	end
@@ -25,9 +25,35 @@ module Plivo
 	    Plivo.delete self.create_subextension(carrier_id),params
 	end
     end
-    class CarrierRouting
+    class OutgoingCarrier
 
-	@api_extension="/CarrierRouting"
+	@api_extension="/OutgoingCarrier"
+	def self.create_subextension(*subs)
+	    subs.unshift(@api_extension).join("/")
+	end
+	def self.list(params={})
+	    Plivo.get @api_extension,params
+	end
+
+	def self.create(params={})
+	    Plivo.post @api_extension,params
+	end
+
+	def self.get(carrier_id,params={})
+	    Plivo.get self.create_subextension(carrier_id),params
+	end
+
+	def self.update(carrier_id,params={})
+	    Plivo.post self.create_subextension(carrier_id),params
+	end
+
+	def self.delete(carrier_id,params={})
+	    Plivo.delete self.create_subextension(carrier_id),params
+	end
+    end
+    class OutgoingCarrierRouting
+
+	@api_extension="/OutgoingCarrierRouting"
 	def self.create_subextension(*subs)
 	    subs.unshift(@api_extension).join("/")
 	end
