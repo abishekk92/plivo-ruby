@@ -14,11 +14,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "plivo"
+  gem.name = "plivo-ruby"
   gem.homepage = "http://github.com/abishekk92/plivo"
   gem.license = "MIT"
-  gem.summary = "API Wrapper to interact with Plivo Cloud, exposes the endpoints as ruby methods"
-  gem.description = "API Wrapper to interact with Plivo Cloud"
+  gem.summary = %Q{API Wrapper to interact with Plivo Cloud, exposes the endpoints as ruby methods}
+  gem.description = %Q{API Wrapper to interact with Plivo Cloud}
   gem.email = "bhat.abishek@gmail.com"
   gem.authors = ["Abishek Bhat"]
   # dependencies defined in Gemfile
