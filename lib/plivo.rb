@@ -1,4 +1,5 @@
 require 'httparty'
+require 'json'
 require_relative 'plivo/application'
 require_relative 'plivo/account'
 require_relative 'plivo/call'
@@ -22,7 +23,8 @@ require_relative 'plivo/conference'
 module Plivo
 	include HTTParty
 	attr_accessor :auth_id,:auth_token
-	headers 'User-Agent' => 'RubyPlivo'
+	headers 'User-Agent' => 'RubyPlivo','Content-Type'=>'application/json'
+	maintain_method_across_redirects true
 	format :json
 	
 	def self.authenticate(auth_id,auth_token)
