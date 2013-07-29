@@ -47,3 +47,10 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+Rake::TestTask.new do |t|
+    t.test_files = FileList['spec/lib/plivo/*_spec.rb']
+    t.verbose = true
+end
+
+task :defalult => :test
