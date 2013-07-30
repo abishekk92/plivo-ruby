@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://MAMWY3MWMZZWI5YWQ5N2:MTM1YTM3Y2FiZjkxY2UwOTI2MDQwM2JhOTQ1YTg0@api.plivo.com/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RubyPlivo
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Content-Type:
+      - text/html
+      Date:
+      - Tue, 30 Jul 2013 07:41:43 GMT
+      Location:
+      - https://api.plivo.com/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/?
+      Server:
+      - nginx/1.2.1
+      Content-Length:
+      - '184'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.2.1</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Tue, 30 Jul 2013 07:41:43 GMT
+- request:
+    method: get
+    uri: https://MAMWY3MWMZZWI5YWQ5N2:MTM1YTM3Y2FiZjkxY2UwOTI2MDQwM2JhOTQ1YTg0@api.plivo.com/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RubyPlivo
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 30 Jul 2013 07:41:48 GMT
+      Server:
+      - nginx/1.2.1
+      X-Plivo-Signature:
+      - W1V7pz2/cIxPY8XABtGQ/rDAu2I=
+      Content-Length:
+      - '3944'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"meta\": {\n    \"previous\": null,\n    \"total_count\": 7,\n
+        \   \"offset\": 0,\n    \"limit\": 20,\n    \"next\": null\n  },\n  \"api_id\":
+        \"7bcf6900-f8eb-11e2-af30-22000ac5332d\",\n  \"objects\": [\n    {\n      \"bill_duration\":
+        31,\n      \"billed_duration\": 60,\n      \"total_amount\": \"0.02000\",\n
+        \     \"parent_call_uuid\": \"2605533a-f5ef-11e2-aee5-efda662b01a9\",\n      \"call_direction\":
+        \"outbound\",\n      \"call_duration\": 31,\n      \"to_number\": \"918861085708\",\n
+        \     \"total_rate\": \"0.02000\",\n      \"from_number\": \"PLEASE_PUT_CALLER_ID_HERE\",\n
+        \     \"end_time\": \"2013-07-26 12:31:22+00:00\",\n      \"call_uuid\": \"271a19d6-f5ef-11e2-af15-efda662b01a9\",\n
+        \     \"resource_uri\": \"/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/271a19d6-f5ef-11e2-af15-efda662b01a9/\"\n
+        \   },\n    {\n      \"bill_duration\": 31,\n      \"billed_duration\": 60,\n
+        \     \"total_amount\": \"0.00400\",\n      \"parent_call_uuid\": null,\n
+        \     \"call_direction\": \"inbound\",\n      \"call_duration\": 31,\n      \"to_number\":
+        \"918861085708\",\n      \"total_rate\": \"0.00400\",\n      \"from_number\":
+        \"sip:abishek130613133829@phone.plivo.com\",\n      \"end_time\": \"2013-07-26
+        12:31:22+00:00\",\n      \"call_uuid\": \"2605533a-f5ef-11e2-aee5-efda662b01a9\",\n
+        \     \"resource_uri\": \"/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/2605533a-f5ef-11e2-aee5-efda662b01a9/\"\n
+        \   },\n    {\n      \"bill_duration\": 38,\n      \"billed_duration\": 60,\n
+        \     \"total_amount\": \"0.02000\",\n      \"parent_call_uuid\": \"dc525882-f5ee-11e2-aa2c-710d5a021b63\",\n
+        \     \"call_direction\": \"outbound\",\n      \"call_duration\": 38,\n      \"to_number\":
+        \"919566539509\",\n      \"total_rate\": \"0.02000\",\n      \"from_number\":
+        \"PLEASE_PUT_CALLER_ID_HERE\",\n      \"end_time\": \"2013-07-26 12:29:46+00:00\",\n
+        \     \"call_uuid\": \"dd6d5316-f5ee-11e2-aa5a-710d5a021b63\",\n      \"resource_uri\":
+        \"/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/dd6d5316-f5ee-11e2-aa5a-710d5a021b63/\"\n
+        \   },\n    {\n      \"bill_duration\": 38,\n      \"billed_duration\": 60,\n
+        \     \"total_amount\": \"0.00400\",\n      \"parent_call_uuid\": null,\n
+        \     \"call_direction\": \"inbound\",\n      \"call_duration\": 38,\n      \"to_number\":
+        \"919566539509\",\n      \"total_rate\": \"0.00400\",\n      \"from_number\":
+        \"sip:abishek130613133829@phone.plivo.com\",\n      \"end_time\": \"2013-07-26
+        12:29:46+00:00\",\n      \"call_uuid\": \"dc525882-f5ee-11e2-aa2c-710d5a021b63\",\n
+        \     \"resource_uri\": \"/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/dc525882-f5ee-11e2-aa2c-710d5a021b63/\"\n
+        \   },\n    {\n      \"bill_duration\": 25,\n      \"billed_duration\": 60,\n
+        \     \"total_amount\": \"0.02000\",\n      \"parent_call_uuid\": \"cf3ed3b4-f5ee-11e2-a957-efda662b01a9\",\n
+        \     \"call_direction\": \"outbound\",\n      \"call_duration\": 25,\n      \"to_number\":
+        \"919566539509\",\n      \"total_rate\": \"0.02000\",\n      \"from_number\":
+        \"PLEASE_PUT_CALLER_ID_HERE\",\n      \"end_time\": \"2013-07-26 12:28:58+00:00\",\n
+        \     \"call_uuid\": \"d05fe076-f5ee-11e2-a97d-efda662b01a9\",\n      \"resource_uri\":
+        \"/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/d05fe076-f5ee-11e2-a97d-efda662b01a9/\"\n
+        \   },\n    {\n      \"bill_duration\": 25,\n      \"billed_duration\": 60,\n
+        \     \"total_amount\": \"0.00400\",\n      \"parent_call_uuid\": null,\n
+        \     \"call_direction\": \"inbound\",\n      \"call_duration\": 25,\n      \"to_number\":
+        \"919566539509\",\n      \"total_rate\": \"0.00400\",\n      \"from_number\":
+        \"sip:abishek130613133829@phone.plivo.com\",\n      \"end_time\": \"2013-07-26
+        12:28:58+00:00\",\n      \"call_uuid\": \"cf3ed3b4-f5ee-11e2-a957-efda662b01a9\",\n
+        \     \"resource_uri\": \"/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/cf3ed3b4-f5ee-11e2-a957-efda662b01a9/\"\n
+        \   },\n    {\n      \"bill_duration\": 64,\n      \"billed_duration\": 120,\n
+        \     \"total_amount\": \"0.01800\",\n      \"parent_call_uuid\": null,\n
+        \     \"call_direction\": \"inbound\",\n      \"call_duration\": 64,\n      \"to_number\":
+        \"13235960802\",\n      \"total_rate\": \"0.00900\",\n      \"from_number\":
+        \"18007452166\",\n      \"end_time\": \"2013-07-24 19:07:23+00:00\",\n      \"call_uuid\":
+        \"17300d5c-f494-11e2-bc19-e9fb799ecc91\",\n      \"resource_uri\": \"/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/17300d5c-f494-11e2-bc19-e9fb799ecc91/\"\n
+        \   }\n  ]\n}"
+    http_version: 
+  recorded_at: Tue, 30 Jul 2013 07:41:48 GMT
+recorded_with: VCR 2.5.0

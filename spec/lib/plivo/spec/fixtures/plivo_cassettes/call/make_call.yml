@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://MAMWY3MWMZZWI5YWQ5N2:MTM1YTM3Y2FiZjkxY2UwOTI2MDQwM2JhOTQ1YTg0@api.plivo.com/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/
+    body:
+      encoding: UTF-8
+      string: ! '{"from":"19512977322","to":"19095210577","answer_url":"https://guarded-island.herokuapp.com/conference/"}'
+    headers:
+      User-Agent:
+      - RubyPlivo
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Content-Type:
+      - text/html
+      Date:
+      - Tue, 30 Jul 2013 07:41:35 GMT
+      Location:
+      - https://api.plivo.com/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/
+      Server:
+      - nginx/1.2.1
+      Content-Length:
+      - '184'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.2.1</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Tue, 30 Jul 2013 07:41:35 GMT
+- request:
+    method: post
+    uri: https://MAMWY3MWMZZWI5YWQ5N2:MTM1YTM3Y2FiZjkxY2UwOTI2MDQwM2JhOTQ1YTg0@api.plivo.com/v1/Account/MAMWY3MWMZZWI5YWQ5N2/Call/
+    body:
+      encoding: UTF-8
+      string: ! '{"from":"19512977322","to":"19095210577","answer_url":"https://guarded-island.herokuapp.com/conference/"}'
+    headers:
+      User-Agent:
+      - RubyPlivo
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 30 Jul 2013 07:41:42 GMT
+      Server:
+      - nginx/1.2.1
+      X-Plivo-Signature:
+      - z8aPPivWcAFgpKkHXGVtSc9+dm4=
+      Content-Length:
+      - '139'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"api_id\": \"79ffaf0e-f8eb-11e2-8eb6-22000ac5550f\",\n  \"message\":
+        \"call fired\",\n  \"request_uuid\": \"47807673-8962-472f-8035-4285a04ea482\"\n}"
+    http_version: 
+  recorded_at: Tue, 30 Jul 2013 07:41:42 GMT
+recorded_with: VCR 2.5.0
