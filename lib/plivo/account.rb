@@ -1,7 +1,7 @@
 module Plivo
 	class Account
 	        @api_extension="/Account"	
-		def self.account(params={})
+		def self.details(params={})
 			Plivo.get '',:query=>params
 		end
 
