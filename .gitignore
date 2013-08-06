@@ -52,6 +52,7 @@ pkg
 # For redcar:
 #.redcar
 #For VCR/webmock
-spec/**/fixtures
+spec/lib/plivo/spec/fixtures/*
+spec/fixtures/*
 # For rubinius:
 #*.rbc
