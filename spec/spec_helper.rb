@@ -1,6 +1,8 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'rspec'
+require 'vcr'
+require 'turn'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
@@ -20,5 +22,5 @@ VCR.config do |c|
 end
 
 RSpec.configure do |config|
-  
+  config.color_enabled = true
 end

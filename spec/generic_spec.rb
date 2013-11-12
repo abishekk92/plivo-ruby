@@ -10,7 +10,7 @@ describe "Generic" do
 	end
 
 	it "should set api_extension" do
-		@client::Call.instance_variable_get(:@api_extension).should=="/Call"
+		@client::Call.instance_variable_get(:@api_extension).should=="/Call/"
 	end
 
 	it "should create a sub extension" do
